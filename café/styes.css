@@ -1,0 +1,160 @@
+body {
+
+    font-family: Arial;
+
+}
+
+:root {
+    --cor-roxa: #539bca;
+    --cor-de-fundo-dos-icones: #e7e7e7;
+}
+
+.icones {
+
+    text-align: end;
+    margin-top: 20px;
+
+}
+
+.icones a {
+    
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 40px;
+    
+
+}
+
+.icones a:hover {
+
+    color: var(--cor-roxa);
+
+}
+
+.titulo {
+
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-size: 40px;
+    font-weight: 100;
+    text-align: center;
+
+}
+
+.inicio {
+
+    font-family: sans-serif;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+
+
+}
+
+.intro .introducao {
+
+    line-height: 45px;
+    margin-top: 10%;
+    margin-left: 10%;
+    max-width: 100%;
+
+}
+
+.intro2 .imagem-coffe img{
+
+    
+    max-width: 100%;
+}
+
+
+.grid {
+
+    font-family: sans-serif;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.info p {
+
+    line-height: 25px;
+    padding-bottom: 5px;
+
+}
+
+.info {
+
+    padding: 20px;
+    background: var(--cor-de-fundo-dos-icones);
+    border: 1px solid var(--cor-de-fundo-dos-icones);
+    border-radius: 15px;
+    margin-bottom: 20px;
+
+}
+
+.info:hover {
+
+    border: 1px solid var(--cor-roxa);
+    box-shadow: 1px 1px 30px 7px var(--cor-roxa);
+    transition: 400ms;
+
+}
+
+.compra {
+
+    background-color: var(--cor-roxa);
+    font-weight: 600;
+    color: #000000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    max-width: 100%;
+
+}
+
+@media (max-width:480px) {
+
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+    .imagem-coffe {
+        width: 100%;
+        
+    }
+    .introducao {
+        width: 100%;
+        line-height: none;
+       
+    }
+    .icones a {
+
+        text-align: center;
+        margin-left: 50px;
+
+    }
+} 
+@media (max-width:600px) {
+
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+    .imagem-coffe {
+        width: 100%;
+        
+    }
+    .introducao {
+        width: 100%;
+        line-height: none;
+       
+    }
+    .icones a {
+
+        text-align: center;
+        margin-left: 50px;
+
+    }
+} 
