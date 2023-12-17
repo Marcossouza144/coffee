@@ -1,3 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
 body {
 
     font-family: Arial;
@@ -36,16 +41,23 @@ body {
 
 }
 
+.titulo span {
+
+    font-weight: bold;
+    color: #296c4e;
+
+}
+
 .titulo {
 
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Roboto';
     font-style: italic;
     font-size: 40px;
-    font-weight: 100;
+    font-weight: 400;
     text-align: center;
     max-width: 100%;
     max-height: 100%;
-
+color: #47926e;
 }
 
 .inicio {
@@ -61,11 +73,13 @@ body {
 
 .intro .introducao {
 
-    line-height: 45px;
+    font-family: 'Roboto';
+    line-height: 35px;
     margin-top: 10%;
     margin-left: 10%;
     max-width: 100%;
     max-height: 100%;
+    color: #296c4e;
 
 }
 
@@ -73,7 +87,7 @@ body {
 
    max-width: 100%;
    max-height: 100%;
-    margin-left: 400px;
+   margin-left: 400px;
 
 }
 
@@ -132,16 +146,37 @@ body {
 }
 
 @media (max-width: 500px) {
+
     .grid {
         grid-template-columns: 1fr;
     }
 
+    .intro2 {
+        display: flex;
+        justify-content: center;
+    }
+
     .intro2 .imagem-coffe {
         margin-left: 0; /* Removi o valor fixo de 400px */
+        width: 80%;
+        
     }
 
     .intro .introducao {
+
         margin-top: 0; /* Removi o valor fixo de 10% */
+        line-height: normal;
+       
+    }
+
+    .inicio {
+
+        display: flex;
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+
     }
 
     .icones a {
