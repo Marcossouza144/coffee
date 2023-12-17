@@ -11,9 +11,11 @@ body {
 
 .icones {
 
-    text-align: end;
+    text-align: center;
     margin-top: 20px;
-
+    max-width: 100%;
+    max-height: 100%;
+    
 }
 
 .icones a {
@@ -22,6 +24,8 @@ body {
     color: #000000;
     font-family: 'Courier New', Courier, monospace;
     margin: 40px;
+    max-width: 100%;
+    max-height: 100%;
 
 
 }
@@ -39,6 +43,8 @@ body {
     font-size: 40px;
     font-weight: 100;
     text-align: center;
+    max-width: 100%;
+    max-height: 100%;
 
 }
 
@@ -47,8 +53,9 @@ body {
     font-family: sans-serif;
     display: grid;
     gap: 20px;
-    grid-template-columns: 1fr 1fr;
-
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 100%;
+    max-height: 100%;
 
 }
 
@@ -58,13 +65,16 @@ body {
     margin-top: 10%;
     margin-left: 10%;
     max-width: 100%;
+    max-height: 100%;
 
 }
 
-.intro2 .imagem-coffe img {
+.intro2 .imagem-coffe {
 
+   max-width: 100%;
+   max-height: 100%;
+    margin-left: 400px;
 
-    max-width: 100%;
 }
 
 
@@ -74,6 +84,8 @@ body {
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
+    max-width: 100%;
+    max-height: 100%;
 
 }
 
@@ -81,6 +93,8 @@ body {
 
     line-height: 25px;
     padding-bottom: 5px;
+    max-width: 100%;
+    max-height: 100%;
 
 }
 
@@ -91,6 +105,8 @@ body {
     border: 1px solid var(--cor-de-fundo-dos-icones);
     border-radius: 15px;
     margin-bottom: 20px;
+    max-width: 100%;
+    max-height: 100%;
 
 }
 
@@ -111,33 +127,24 @@ body {
     text-decoration: none;
     border-radius: 4px;
     max-width: 100%;
+    max-height: 100%;
 
 }
 
-@media (max-width:480px) {
-
+@media (max-width: 500px) {
     .grid {
-        grid-template-columns: 1fr 1fr;
-        width: 100%;
-    }
-    
-    .imagem-coffe {
-        
-       display: none;
-
+        grid-template-columns: 1fr;
     }
 
-    .introducao {
-        width: 100%;
-       font-size: 15px;
+    .intro2 .imagem-coffe {
+        margin-left: 0; /* Removi o valor fixo de 400px */
+    }
 
+    .intro .introducao {
+        margin-top: 0; /* Removi o valor fixo de 10% */
     }
 
     .icones a {
-
-        text-align: start;
-        
-
+        margin: 10px; /* Reduzi a margem para um valor menor */
     }
 }
-
