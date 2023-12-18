@@ -183,3 +183,117 @@ color: #47926e;
         margin: 10px; /* Reduzi a margem para um valor menor */
     }
 }
+@media (max-width: 600px) {
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .intro2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .intro2 .imagem-coffe {
+        margin-left: 0; /* Removi o valor fixo de 400px */
+        width: 80%;
+        
+    }
+
+    .intro .introducao {
+
+        margin-top: 0; /* Removi o valor fixo de 10% */
+        line-height: normal;
+       
+    }
+
+    .inicio {
+
+        display: flex;
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+
+    }
+
+    .icones a {
+        margin: 10px; /* Reduzi a margem para um valor menor */
+    }
+}
+@media (max-width: 991px) {
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .intro2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .intro2 .imagem-coffe {
+        margin-left: 0; /* Removi o valor fixo de 400px */
+        width: 80%;
+        
+    }
+
+    .intro .introducao {
+
+        margin-top: 0; /* Removi o valor fixo de 10% */
+        line-height: normal;
+      
+       
+    }
+
+    .inicio {
+
+        display: flex;
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+
+    }
+
+    .icones a {
+        margin: 10px; /* Reduzi a margem para um valor menor */
+    }
+}
+@media (max-width: 1200px) {
+
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .intro2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .intro2 .imagem-coffe {
+        margin-left: 0; /* Removi o valor fixo de 400px */
+        width: 80%;
+        
+    }
+
+    .intro .introducao {
+
+        margin-top: 0; /* Removi o valor fixo de 10% */
+        line-height: normal;
+       
+    }
+
+    .inicio {
+
+        display: flex;
+        width: 100%;
+        align-items: center;
+        gap: 20px;
+
+    }
+
+    .icones a {
+        margin: 10px; /* Reduzi a margem para um valor menor */
+    }
+}
